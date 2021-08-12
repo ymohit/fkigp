@@ -1,0 +1,16 @@
+gdown
+numpy
+scipy
+flags
+absl-py
+fastmat==0.2a3
+sklearn
+jupyterlab
+pandas
+wandb
+matplotlib
+netCDF4
+arm_pyart
+pyyaml
+tqdm
+git+https://github.com/darkecology/pywsrlib

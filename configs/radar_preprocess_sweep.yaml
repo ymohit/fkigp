@@ -1,0 +1,12 @@
+program: experiments/radar_processing.py
+project: skigp
+method: grid
+parameters:
+  method:
+    values: [1, 2]
+  grid_idx:
+    values: [2, 3, 4, 7, 8, 9]
+command:
+  - /home/ymohit/anaconda3/envs/fkigp/bin/python
+  - ${program}
+  - ${args}

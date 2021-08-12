@@ -1,0 +1,106 @@
+1:
+- !!python/tuple
+  - 36
+  - 48
+  - 60
+- !!python/tuple
+  - -82
+  - -64
+  - 60
+- &id006 !!python/tuple
+  - 500
+  - 3000
+  - 6
+2:
+- &id004 !!python/tuple
+  - 36
+  - 48
+  - 80
+- &id005 !!python/tuple
+  - -82
+  - -64
+  - 80
+- &id001 !!python/tuple
+  - 500
+  - 3000
+  - 8
+3:
+- !!python/tuple
+  - 36
+  - 48
+  - 100
+- !!python/tuple
+  - -82
+  - -64
+  - 100
+- *id001
+4:
+- &id002 !!python/tuple
+  - 36
+  - 48
+  - 120
+- &id003 !!python/tuple
+  - -82
+  - -64
+  - 120
+- *id001
+5:
+- *id002
+- *id003
+- &id007 !!python/tuple
+  - 500
+  - 3000
+  - 10
+6:
+- *id004
+- *id005
+- *id006
+7:
+- !!python/tuple
+  - 36
+  - 48
+  - 150
+- !!python/tuple
+  - -82
+  - -64
+  - 150
+- !!python/tuple
+  - 500
+  - 3000
+  - 15
+8:
+- !!python/tuple
+  - 36
+  - 48
+  - 250
+- !!python/tuple
+  - -82
+  - -64
+  - 250
+- !!python/tuple
+  - 500
+  - 3000
+  - 25
+9:
+- !!python/tuple
+  - 36
+  - 48
+  - 400
+- !!python/tuple
+  - -82
+  - -64
+  - 400
+- !!python/tuple
+  - 500
+  - 3000
+  - 40
+10:
+- !!python/tuple
+  - 24.5
+  - 49
+  - 160
+- !!python/tuple
+  - -125
+  - -67
+  - 80
+- *id007

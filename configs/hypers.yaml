@@ -1,0 +1,22 @@
+precipitation:
+  lengthscale:
+  - 3.138687626442123
+  - 2.1538556899243417
+  - 0.7921664172001511
+  noise: 4.008495057501225
+  outputscale: 2.8462000317382254
+radar:
+  lengthscale:
+  - 0.25
+  - 0.25
+  - 200
+  noise: 50
+  outputscale: 3.5
+sine:
+  lengthscale: 0.3125647162643775
+  noise: 0.07420840080189714
+  outputscale: 1.4395243461930805
+sound:
+  lengthscale: 10.89587062371257
+  noise: 0.009999999999999893
+  outputscale: 0.0026000000000000164

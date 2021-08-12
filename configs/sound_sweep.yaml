@@ -1,0 +1,22 @@
+project: skigp
+program: experiments/sound.py
+method: grid
+parameters:
+  experiment_type:
+    values: [0, 1, 2, 3]
+  data_type:
+    value: 2
+  framework:
+    value: 1
+  grid_size:
+    values: [1000, 2000, 5000, 6000, 8000, 10000, 30000, 60000]
+  gsgp_type:
+    value: 2
+  method:
+    values: [1, 2]
+  seed:
+    values: [1, 23, 67, 971, 23427, 431241, 2423717, 9871]
+command:
+  - /home/ymohit/anaconda3/envs/fkigp/bin/python
+  - ${program}
+  - ${args}

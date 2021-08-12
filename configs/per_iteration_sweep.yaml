@@ -1,0 +1,34 @@
+program: experiments/per_iteration.py
+project: skigp
+method: grid
+parameters:
+  data_type:
+    value: 0
+  framework:
+    value: 1
+  grid_size_f:
+    values:
+    - 2
+    - 3
+  gsgp_type:
+    value: 2
+  maxiter:
+    value: 100
+  method:
+    values:
+    - 1
+    - 2
+  num_samples:
+    value:
+    - 1000
+    - 5000
+  seed:
+    value:
+    - 1
+    - 23
+  sigma:
+    'value:': 0.25
+command:
+  - /home/ymohit/anaconda3/envs/fkigp/bin/python
+  - ${program}
+  - ${args}

@@ -34,23 +34,21 @@ os.makedirs(RADAR_DATASET_PATH, exist_ok=True)
 
 def download_data():
 
-    # downloading for north-eastern data
     print("Downloading NE data ...")
     file_name_list = os.environ['PRJ'] + 'configs/radar_north_eastern.yaml'
     NE_DIR = RADAR_DATASET_PATH + '/ne/'
     os.makedirs(NE_DIR, exist_ok=True)
     file_names = yaml.load(open(file_name_list))
     for file_name in tqdm.tqdm(file_names):
-        wsrlib.get_s3(file_name, localfile=NE_DIR + file_name + '.gz')
+        wsrlib.read_s3(file_name, localfile=NE_DIR + file_name + '.gz')
 
-    # downloading for north-eastern data
     print("Downloading Entire US data ...")
     file_name_list = os.environ['PRJ'] + 'configs/radar_entire_us.yaml'
     ENTIRE_US_DIR = RADAR_DATASET_PATH + '/entire_us/'
     os.makedirs(ENTIRE_US_DIR, exist_ok=True)
     file_names = yaml.load(open(file_name_list))
     for file_name in tqdm.tqdm(file_names):
-        wsrlib.get_s3(file_name, localfile=ENTIRE_US_DIR + file_name + '.gz')
+        wsrlib.read_s3(file_name, localfile=ENTIRE_US_DIR + file_name + '.gz')
 
 
 def get_data_poionts(radar, default_val=-30, zmax=3000):

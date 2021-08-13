@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 source scripts/setup.sh
-export data_dir='/Users/ymohit/skigp/data1'
-#export data_dir=${PRJ_PATH}'/data1'
+export data_dir=${PRJ_PATH}'/data'
 
 
 echo 'Downloading data to '$data_dir

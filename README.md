@@ -67,8 +67,8 @@ wandb: Run sweep agent with: wandb agent ymohit/fkigp/n25yz7k8
 * Step 3: Then launch sweep on slurm job as follows:
 
 ```
-# bash bin/launch_sweep.sh sweepId numMachines numCpuPerMachine mbRAMperMachine
-bash bin/launch_sweep.sh ymohit/fkigp/n25yz7k8 10 1 5000
+# bash scripts/launch_sweep.sh sweepId numMachines numCpuPerMachine mbRAMperMachine
+bash scripts/launch_sweep.sh ymohit/fkigp/n25yz7k8 10 1 5000
 ```
 
 * Step 4: Collect data from logs/sweep_id for sweep_id. This data can contains results. 
